@@ -1,0 +1,19 @@
+DROP DATABASE IF EXISTS blake_mysql_log_testing;
+
+CREATE DATABASE blake_mysql_log_testing;
+
+USE blake_mysql_log_testing
+
+CREATE TABLE people (
+    first_name varchar(255) NOT NULL,
+    last_name varchar(255) NOT NULL,
+    age tinyint
+);
+
+INSERT INTO people (first_name, last_name, age)
+VALUES
+    ('Blake', 'Astley', 33),
+    ('Beth', 'Wilson', 33),
+    ('Erlich', 'Bachman', NULL);
+
+DROP DATABASE IF EXISTS blake_mysql_log_testing;
